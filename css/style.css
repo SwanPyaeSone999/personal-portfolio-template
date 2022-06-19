@@ -1,0 +1,96 @@
+/*global style classes*/
+.font-os{
+	font-family: 'Oswald', sans-serif;
+}
+.font-ram{
+	font-family: 'Rambla', sans-serif;
+}
+.font-stat{
+	font-family: 'Staatliches', cursive;
+}
+.font-16{
+	font-size: 16px;
+}
+.font-20{
+	font-size: 20px;
+}
+.font-30{
+	font-size: 30px;
+}
+.font-27{
+	font-size: 27px;
+}
+.font-34{
+	font-size: 34px;
+}
+.font-40{
+	font-size: 40px;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin:0;
+	padding:0;
+	overflow-x: hidden;	
+}
+/*header section*/
+#header nav{
+	height: 100vh;
+}
+#header .nav-link{
+	margin: 10px 30px;
+	border-bottom: 1px solid #ccc;
+	letter-spacing: 2px;
+}
+#header .nav-link:hover{
+	color: #fff !important;
+}
+#header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: left .5s ease;
+	z-index: 1;
+}
+#header .toggle-button{
+	position: fixed;
+	top: 10px;
+	right: 20px;
+	border:none;
+}
+.toggle-left{
+	left: 0 !important;
+	width: 100% !important;
+}
+/*banner section*/
+#site-main .col-md-9{
+	background-image: url(../images/bg.jpeg);
+	width: 100%;
+	height: 100vh;
+}
+#banner .banner-area .author{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-45%,-50%);
+}
+#banner .banner-area .author .author-img{
+	width: 245px;
+	height: 245px;
+	border-radius: 50%;
+	background-image: url(../images/profile.jpeg);
+	background-size: 100%;
+}
+/*contanct section*/
+#contanct-us input,
+#contanct-us textarea{
+	border-bottom: 1px solid #000 !important;
+}
+@media screen(min-width: 768px){
+	#header{
+		z-index: 0;
+	}
+}
